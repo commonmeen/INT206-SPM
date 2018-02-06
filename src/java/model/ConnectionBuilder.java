@@ -22,7 +22,6 @@ public class ConnectionBuilder {
         try {
             Class.forName(driver);
             con = DriverManager.getConnection(url,username,password);
-            System.out.println("Success!!");
         } catch (Exception e) {
             System.out.println(e);
         }

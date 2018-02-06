@@ -36,20 +36,13 @@ public class TestHelloWorld {
             PreparedStatement ps = con.prepareStatement(SQL);
             ResultSet rs = ps.executeQuery();
             
-            while(rs.next()){
+            if(rs.next()){
                 this.message = rs.getString("detail");
             }
-            System.out.println(this.message);
         } catch (Exception e) {
             System.out.println(e);
         }
-        
         return this.message;
     }
-    
-//    public static void main(String[] args) {
-//        TestHelloWorld ts = new TestHelloWorld();
-//        ts.showHelloWorldFromDB();
-//    }
 }
 
