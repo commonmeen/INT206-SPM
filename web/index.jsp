@@ -8,6 +8,5 @@
     </head>
     <body>
         <h1>${message}</h1>
-        <h2>Commit Test</h2>
     </body>
 </html>
